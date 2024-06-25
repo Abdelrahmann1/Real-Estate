@@ -258,10 +258,10 @@ alt = Homeverse logo
 Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy text of the printing.
 
 <ion-icon name="location-outline"></ion-icon>
-Brooklyn, New York, United States
+Egypt ,dubai , Qatar
 
 <ion-icon name="call-outline"></ion-icon>
-+0123-456789
++0111-000000
 
 <ion-icon name="mail-outline"></ion-icon>
 contact@homeverse.com

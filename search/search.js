@@ -153,10 +153,10 @@ function displayPropertyCardss(querySnapshot,id) {
             </ul>
             <div class="card-footer" style="justify-content:normal;flex-direction:column">
             <div class="buttons">
-            <a href="tel:01090009000"class="   call-btn wb-a"> 
+            <a href="tel:01099191074"class="   call-btn wb-a"> 
               <button type="button" class="butn call-btn"style="font-size: 16px; font-weight: bold; color: white;"><ion-icon name="call-outline" class="btn-wtsapp"></ion-icon>Call</button>
             </a>
-            <a href="https://wa.me/01090009000"class="  whatsapp-btn wb-a"> 
+            <a href="https://wa.me/01099191074"class="  whatsapp-btn wb-a"> 
               <button type="button" class="butn whatsapp-btn"style="font-size: 16px; font-weight: bold; color: white;"><ion-icon name="logo-whatsapp" class="btn-wtsapp"></ion-icon>whatsapp</button>
             </a>
           </div>
