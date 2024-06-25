@@ -306,7 +306,7 @@ a {
   text-transform: uppercase;
   position: absolute;
   top: 15px;
-  right: 15px;
+  right: 50%;
   padding: 4px 10px;
 }
 
@@ -535,7 +535,7 @@ color: #000000;
 }
 .cl-sea{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .header-top-list {
   gap: 15px;
@@ -3002,7 +3002,7 @@ footer {
 }
 
 .consa {
-  width: 80vw !important;
+  width: 95vw !important;
 }
 
 .buttons {

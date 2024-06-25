@@ -38,7 +38,7 @@ collectionRef.get()
 function displayPropertyCardss(querySnapshot) {
   // Clear the previous data
   const propertyData = querySnapshot;
-  osa = document.getElementsByClassName("carousel-inner");
+  osa = document.getElementsByClassName("imga");
 
   osa.innerHTML = "";
   price = propertyData.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -48,21 +48,24 @@ function displayPropertyCardss(querySnapshot) {
   propertyData.photos.forEach((element, index) => {
     diva = document.createElement("div");
     if (index == 0) {
-      diva.className = "carousel-item active h-100";
+      diva.className = "image-pr-cont active";
     } else {
-      diva.className = "carousel-item h-100";
+      diva.className = "image-pr-cont";
     }
 
     img = document.createElement("img");
-    img.className = "d-block img-prod-caro w-100 h-100";
+    img.className = "img-prod-caro image-pr";
     img.src = element;
     diva.appendChild(img);
     // alert(index);
     osa[0].appendChild(diva);
   });
   // alert(document.getElementById("title-pro").innerHTML );
-  document.getElementById("title-pro").innerHTML = propertyData.title;
+  // document.getElementById("title-pro").innerHTML = propertyData.title;
   document.getElementById("conss").innerHTML = `      
+  <h4 class="title text-dark" id="title-pro">${propertyData.title}
+  </h4>
+
     <div   class="card-badge ${propertyData.typeofunit === 'rent' ? 'green' : 'blue'}">For ${propertyData.typeofunit}</div>
 
   </figure>
@@ -71,12 +74,12 @@ function displayPropertyCardss(querySnapshot) {
     <strong> ${price}</strong> <strong> L.E </strong> \\ ${propertyData.typeofunit === 'rent' ? 'MONTHLY' : 'TOTAL PRICE'}
         </div>
 
-        <div class="banner-actions" style="display:flex !important;padding:2% 0">
+        <div class="banner-actions" style="display:flex !important; padding:2% 0;">
         <button class="banner-actions-btn"style="color:black !important;width:fit-content;margin-right:2rem">
           <ion-icon name="location"></ion-icon>
           <address>${propertyData.area}</address>
         </button>
-        <button class="banner-actions-btn" style="color:black !important">
+        <button class="banner-actions-btn " style="color:black !important">
           <ion-icon name="camera"></ion-icon>
           <span>${propertyData.photos.length}</span>
         </button>

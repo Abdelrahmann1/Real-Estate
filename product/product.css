@@ -1,0 +1,47 @@
+.imga{
+    width: 100% !important;
+    display: flex;
+    flex-direction: row;
+        gap: 0px 8px;
+
+}
+.image-pr-cont:hover{
+    width: 100% !important;
+    filter: grayscale(0%);
+
+} 
+
+.image-pr:hover{
+    
+}
+.image-pr{
+    transition: all 0.5s ease-in-out 0s !important;
+    /* position: absolute; */
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    color: transparent;
+}
+.image-pr-cont{
+    position: relative;
+    filter: grayscale(100%);
+    transition: all 0.5s ease-in-out 0s !important;
+    width: 20%;
+    overflow: hidden;
+    display: flex;
+}
+.shals{
+flex-direction: row  !important;
+}
+@media (min-width: 576px) {
+    
+.shals{
+    gap: 3rem;
+    flex-direction: column ;
+    display: block;
+}
+}
