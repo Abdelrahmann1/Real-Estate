@@ -31,96 +31,62 @@
   </div>
 
 
-  <header class="header" data-header>
 
-    <div class="overlay" data-overlay></div>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <a href="/" class="d-flex px-4 col-md-3 mb-2 mb-md-0  justify-content-center">
+        <img src="../assets/images/logo.jpeg" alt="" class="logo-sd">
+      </a>
+      <ul class=" col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+      </ul>
 
-    <div class="header-bottom">
-      <div class="container">
-
-        <a href="../index.html" class="logo">
-          <img src="../assets/images/logo.jpeg" alt="Homeverse logo">
-        </a>
-
-        <nav class="navbar" data-navbar>
-
-          <div class="navbar-top">
-
-            <a href="#" class="logo">
-              <img src="../assets/images/logo.jpeg" alt="Homeverse logo">
-            </a>
-
-            <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-          </div>
-
-          <div class="navbar-bottom">
-            <ul class="navbar-list">
-
-              <li>
-                <a href="#home" class="navbar-link" data-nav-link>Home</a>
-              </li>
-
-              <li>
-                <a href="#about" class="navbar-link" data-nav-link>About</a>
-              </li>
-
-              <li>
-                <a href="#service" class="navbar-link" data-nav-link>Service</a>
-              </li>
-
-              <li>
-                <a href="#property" class="navbar-link" data-nav-link>Property</a>
-              </li>
-
-              <li>
-                <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-              </li>
-
-              <li>
-                <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
-              </li>
-
-            </ul>
-          </div>
-
-        </nav>
-
-        <div class="header-bottom-actions">
-
-          <button class="header-bottom-actions-btn" aria-label="Search">
-            <ion-icon name="search-outline"></ion-icon>
-
-            <span>Search</span>
-          </button>
-
-          <button class="header-bottom-actions-btn" aria-label="Profile">
-            <ion-icon name="person-outline"></ion-icon>
-
-            <span>Profile</span>
-          </button>
-
-          <button class="header-bottom-actions-btn" aria-label="Cart">
-            <ion-icon name="cart-outline"></ion-icon>
-
-            <span>Cart</span>
-          </button>
-
-          <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
-            <ion-icon name="menu-outline"></ion-icon>
-
-            <span>Menu</span>
-          </button>
-
+      <div class="col-md-3 text-center">
+        <!-- <button type="button" class="btn langs-btn btn-primary">Arabic</button> -->
+        <div class="switch">
+          <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+          <label for="language-toggle"></label>
+          <span class="on">BN</span>
+          <span class="off">EN</span>
         </div>
-
+      </div>
       </div>
     </div>
+  </div>
 
-  </header>
+    <header class="d-flex  align-items-center  justify-content-md-between ">
+      <a href="/" class="d-flex px-4 col-md-3 mb-2 mb-md-0  ">
+        <img src="../assets/images/logo.jpeg" alt="" class="logo-sd">
+      </a>
+      <svg xmlns="http://www.w3.org/2000/svg"data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"  width="46" height="46" fill="currentColor" class="bi bi-justify appnav" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+      </svg>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 disnav">
+        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+      </ul>
 
+      <div class="col-md-3 text-center disnav">
+        <!-- <button type="button" class="btn langs-btn btn-primary">Arabic</button> -->
+        <div class="switch">
+          <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+          <label for="language-toggle"></label>
+          <span class="on">BN</span>
+          <span class="off">EN</span>
+        </div>
+      </div>
+    </header>
+    
 
      <!-- <main>
         <section class="property" id="property">

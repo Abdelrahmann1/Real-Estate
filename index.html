@@ -35,13 +35,15 @@
   </div>
 
 
-
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between ">
-      <a href="/" class="d-flex px-4 col-md-3 mb-2 mb-md-0  ">
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <a href="/" class="d-flex px-4 col-md-3 mb-2 mb-md-0  justify-content-center">
         <img src="assets/images/logo.jpeg" alt="" class="logo-sd">
       </a>
-
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+      <ul class=" col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
         <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
         <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
@@ -50,6 +52,34 @@
       </ul>
 
       <div class="col-md-3 text-center">
+        <!-- <button type="button" class="btn langs-btn btn-primary">Arabic</button> -->
+        <div class="switch">
+          <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+          <label for="language-toggle"></label>
+          <span class="on">BN</span>
+          <span class="off">EN</span>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+    <header class="d-flex  align-items-center  justify-content-md-between ">
+      <a href="/" class="d-flex px-4 col-md-3 mb-2 mb-md-0  ">
+        <img src="assets/images/logo.jpeg" alt="" class="logo-sd">
+      </a>
+      <svg xmlns="http://www.w3.org/2000/svg"data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"  width="46" height="46" fill="currentColor" class="bi bi-justify appnav" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+      </svg>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 disnav">
+        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+      </ul>
+
+      <div class="col-md-3 text-center disnav">
         <!-- <button type="button" class="btn langs-btn btn-primary">Arabic</button> -->
         <div class="switch">
           <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
@@ -339,7 +369,7 @@
         </div>
       </section>
 
-
+<!-- 
       <section class="about" id="about">
         <div class="container flex-row">
 
@@ -409,9 +439,69 @@
           </div>
 
         </div>
+      </section> -->
+
+      <section class="about" id="about">
+        <div class="container">
+          <div class="row ">
+      
+            <div class="col-lg-6  col-md-12 col-sm-12">
+              <figure class="about-banner">
+                <img src="./assets/images/about-banner-1.png" alt="House interior" class="img-fluid">
+      
+                <img src="./assets/images/about-banner-2.jpg" alt="House interior" class="abs-img img-fluid">
+              </figure>
+            </div>
+      
+            <div class="col-lg-6 second-col mt-4 col-md-12 col-sm-12">
+              <div class="about-content">
+                <p class="section-subtitle">About Us</p>
+                <h2 class="h2 section-title">The Leading Real Estate Rental Marketplace.</h2>
+                <p class="about-text">
+                  Over 39,000 people work for us in more than 70 countries all over the This breadth of global coverage,
+                  combined with specialist services
+                </p>
+      
+                <ul class="about-list">
+                  <li class="about-item d-flex align-items-center">
+                    <div class="about-item-icon">
+                      <ion-icon name="home-outline"></ion-icon>
+                    </div>
+                    <p class="about-item-text">Smart Home Design</p>
+                  </li>
+                  <li class="about-item d-flex align-items-center">
+                    <div class="about-item-icon">
+                      <ion-icon name="leaf-outline"></ion-icon>
+                    </div>
+                    <p class="about-item-text">Beautiful Scene Around</p>
+                  </li>
+                  <li class="about-item d-flex align-items-center">
+                    <div class="about-item-icon">
+                      <ion-icon name="wine-outline"></ion-icon>
+                    </div>
+                    <p class="about-item-text">Exceptional Lifestyle</p>
+                  </li>
+                  <li class="about-item d-flex align-items-center">
+                    <div class="about-item-icon">
+                      <ion-icon name="shield-checkmark-outline"></ion-icon>
+                    </div>
+                    <p class="about-item-text">Complete 24/7 Security</p>
+                  </li>
+                </ul>
+      
+                <p class="callout">
+                  "Enimad minim veniam quis nostrud exercitation
+                  llamco laboris. Lorem ipsum dolor sit amet"
+                </p>
+      
+                <a href="#service" class="btn btn-primary">Our Services</a>
+              </div>
+            </div>
+      
+          </div>
+        </div>
       </section>
-
-
+      
 
 
 
