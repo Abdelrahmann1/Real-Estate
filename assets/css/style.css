@@ -416,10 +416,6 @@ button {
   /* Center the progress bar */
 }
 
-.spinner-border {
-  /* display: none !important; */
-}
-
 #loading {
   display: inline-block;
   width: 150px;
@@ -1662,7 +1658,6 @@ flex-direction: row;
   color: inherit;
 }
 
-.footer-top {}
 
 .footer-brand {
   margin-bottom: 70px;
@@ -3197,9 +3192,6 @@ address {
   align-items: center;
 }
 
-.images-prod {
-  /* border: .5px solid grey; */
-}
 
 .img-prod-caro {
   height: 30rem !important;
@@ -3457,8 +3449,7 @@ input.check-toggle-round-flat + label:after {
   transition: margin 0.2s;
 }
 
-input.check-toggle-round-flat:checked + label {
-}
+
 
 input.check-toggle-round-flat:checked + label:after {
   margin-left: 44px;
