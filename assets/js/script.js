@@ -51,3 +51,8 @@ const header = document.querySelector("[data-header]");
 function change_page(){
   window.location.href = "login/login.html";
 } 
+
+function go_to_arabic(){
+  window.location.href = "ar/";
+} 
+
